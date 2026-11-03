@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "install:all": "bun install --prefix server && bun install --prefix client",
-    "dev": "bun --prefix client run dev",
+    "dev": "bun run --parallel dev:client dev:server",
+    "dev:client": "bun --prefix client run dev",
     "format": "bunx prettier --write .",
     "dev:server": "bun --prefix server run dev",
     "build": "bun --prefix client run build"
