@@ -44,12 +44,16 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 ### Running Development Servers
 
-Start Backend:
-```bash
-bun run dev:server
-```
+From the repository root, start both the backend and frontend with:
 
-Start Frontend:
 ```bash
 bun run dev
+```
+
+To run either one separately:
+
+```bash
+bun run dev:server
+# or
+bun run dev:client
 ```
